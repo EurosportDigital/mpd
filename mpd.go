@@ -175,6 +175,7 @@ type AdaptationSet struct {
 }
 
 type adaptationSetMarshal struct {
+	ContentType             *string                 `xml:"contentType,attr"`
 	MimeType                string                  `xml:"mimeType,attr"`
 	SegmentAlignment        ConditionalUint         `xml:"segmentAlignment,attr"`
 	StartWithSAP            *uint64                 `xml:"startWithSAP,attr"`
